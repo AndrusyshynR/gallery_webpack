@@ -1,0 +1,65 @@
+body{
+    max-width: 1200px;
+    margin: auto;
+}
+
+#navigation{
+    width: 100%;
+    margin: 15px 0;
+    background: rgb(92, 67, 67);
+    padding: 15px;
+}
+
+#navigation span{
+    background: white;
+    padding: 5px 10px;
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+#navigation span:hover{
+    background: #ccc;
+}
+
+#navigation input{
+    width: 50px;
+    height: 18px;
+}
+
+#gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#gallery .photo{
+    position: relative;
+    border: 1px solid rgb(146, 141, 141);
+    margin-bottom: 15px;
+    box-shadow: 0 0 3px 2px #00000075;
+}
+
+#gallery .photo i, #gallery .photo span{
+    position: absolute;
+    z-index: 5;
+    top: 5px;
+}
+
+#gallery .photo i{
+    left: 5px;
+    background: #fff;
+    padding: 2px;
+}
+
+#gallery .photo span{
+    right: 5px;
+    border-radius: 50%;
+    min-width: 30px;
+    min-height: 30px;
+    background: red;
+    text-align: center;
+    line-height: 30px;
+    padding: 0 2px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
